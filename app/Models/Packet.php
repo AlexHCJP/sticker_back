@@ -11,6 +11,7 @@ class Packet extends Model
 {
     protected $fillable = [
         'name',
+        'title',
         'content',
         'views'
     ];

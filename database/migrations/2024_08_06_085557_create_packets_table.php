@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('packets', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
+            $table->string('title', 255);
             $table->integer('views')->default(0);
             $table->json('content');
             $table->timestamps();
